@@ -125,20 +125,22 @@
 
 // async function getPaid(){
 //     const houseOneWait = await houseOne()
-//     const houseTwoWait = await houseTwo()
-//     const houseThreeWait = await houseThree()
 //     console.log(houseOneWait)
+
+//     const houseTwoWait = await houseTwo()
 //     console.log(houseTwoWait)
+
+//     const houseThreeWait = await houseThree()
 //     console.log(houseThreeWait)
 // }
 
 // getPaid()
 
 //Code 08
-// async function getACuteDogPhoto(){
-//     const res = await fetch('https://dog.ceo/api/breeds/image/random')
-//     const data = await res.json()
-//     console.log(data)
-// }
-// getACuteDogPhoto()
+async function getACuteDogPhoto(){
+    const res = await fetch('https://dog.ceo/api/breeds/image/random')
+    const data = await res.json()
+    console.log(data)
+}
+getACuteDogPhoto()
 
