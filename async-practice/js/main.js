@@ -141,6 +141,11 @@ async function getACuteDogPhoto(){
     const res = await fetch('https://dog.ceo/api/breeds/image/random')
     const data = await res.json()
     console.log(data)
+    image.src = data.message
 }
 getACuteDogPhoto()
+
+const image = document.querySelector('img')
+const button = document.querySelector('button')
+button.addEventListener('click', getACuteDogPhoto)
 
